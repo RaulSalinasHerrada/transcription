@@ -3,7 +3,7 @@ version: "3"
 services:
 
   app:
-    container_name: extractor
+    container_name: transcriber
     build:
       context: ./app
       dockerfile: Dockerfile
@@ -19,5 +19,5 @@ services:
 networks:
   default:
       driver: bridge
-      name: streaming-transcription
+      name: streaming
 
